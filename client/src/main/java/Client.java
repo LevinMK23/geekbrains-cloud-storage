@@ -1,11 +1,13 @@
 import java.io.*;
 import java.net.Socket;
+import java.sql.DriverManager;
 import java.util.Arrays;
 
 public class Client {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         File file = new File("client\\src\\main\\resources" +
                 "\\Atlas-master.zip");
+        Class.forName("org.sqlite.JDBC");
         try(Socket socket = new Socket("localhost", 8189)){
             System.out.println("Connected to server");
             DataInputStream in = new DataInputStream(socket.getInputStream());
