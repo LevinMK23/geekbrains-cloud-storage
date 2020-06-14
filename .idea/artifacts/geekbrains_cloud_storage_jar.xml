@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="geekbrains-cloud-storage:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/geekbrains_cloud_storage_jar</output-path>
+    <root id="root">
+      <element id="archive" name="geekbrains-cloud-storage.jar">
+        <element id="module-output" name="client" />
+        <element id="module-output" name="geekbrains-cloud-storage" />
+        <element id="module-output" name="server" />
+      </element>
+      <element id="library" level="project" name="Maven: org.xerial:sqlite-jdbc:3.31.1" />
+    </root>
+  </artifact>
+</component>
